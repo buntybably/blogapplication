@@ -1,6 +1,8 @@
-package com.NikhilIT.blog.entity;
+package com.NikhilIT.blog.payloads;
 
-public class User {
+import javax.persistence.Id;
+
+public class UserDto {
 	private int id;
 	private String name;
 	private String email;
@@ -38,11 +40,9 @@ public class User {
 	}
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", email=" + email + ", password=" + password + ", about=" + about
-				+ "]";
+		return "UserDto [id=" + id + ", name=" + name + ", email=" + email + ", password=" + password + ", about="
+				+ about + "]";
 	}
-	
-	
 	
 	
 
